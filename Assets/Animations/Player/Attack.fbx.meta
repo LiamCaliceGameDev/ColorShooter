@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: a6056e4637b364a01998e855f357c09b
+timeCreated: 1478714836
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Base_Geo
+    100004: BE_GunTip01
+    100006: BE_HeadEnd01
+    100008: BN_Body01
+    100010: BN_Gun01
+    100012: BN_Head01
+    100014: BN_HeadMid01
+    100016: BN_Pivot01
+    100018: BN_Root01
+    100020: BN_Scope01
+    100022: Body_Control01
+    100024: Body_Geo
+    100026: Glasses_Geo
+    100028: Global_Control01
+    100030: Gun_Control01
+    100032: Gun_Geo
+    100034: Head_Control01
+    100036: Head_Geo
+    100038: HeadMid_Control01
+    100040: Pivot_Control01
+    100042: Pivot_Geo
+    100044: Player_Geo
+    100046: Remote_Left_Geo
+    100048: Remote_Left_Geo1
+    100050: Restrainer_Left_Geo
+    100052: Restrainer_Right_Geo
+    100054: Rotator_Geo
+    100056: Scope_Control01
+    100058: Scope_Geo
+    100060: Strap_Geo
+    400000: //RootNode
+    400002: Base_Geo
+    400004: BE_GunTip01
+    400006: BE_HeadEnd01
+    400008: BN_Body01
+    400010: BN_Gun01
+    400012: BN_Head01
+    400014: BN_HeadMid01
+    400016: BN_Pivot01
+    400018: BN_Root01
+    400020: BN_Scope01
+    400022: Body_Control01
+    400024: Body_Geo
+    400026: Glasses_Geo
+    400028: Global_Control01
+    400030: Gun_Control01
+    400032: Gun_Geo
+    400034: Head_Control01
+    400036: Head_Geo
+    400038: HeadMid_Control01
+    400040: Pivot_Control01
+    400042: Pivot_Geo
+    400044: Player_Geo
+    400046: Remote_Left_Geo
+    400048: Remote_Left_Geo1
+    400050: Restrainer_Left_Geo
+    400052: Restrainer_Right_Geo
+    400054: Rotator_Geo
+    400056: Scope_Control01
+    400058: Scope_Geo
+    400060: Strap_Geo
+    4300000: Body_Geo
+    4300002: Strap_Geo
+    4300004: Head_Geo
+    4300006: Glasses_Geo
+    4300008: Pivot_Geo
+    4300010: Base_Geo
+    4300012: Remote_Left_Geo
+    4300014: Restrainer_Left_Geo
+    4300016: Restrainer_Right_Geo
+    4300018: Rotator_Geo
+    4300020: Gun_Geo
+    4300022: Scope_Geo
+    4300024: Remote_Left_Geo1
+    7400000: Attack
+    9500000: //RootNode
+    13700000: Base_Geo
+    13700002: Body_Geo
+    13700004: Glasses_Geo
+    13700006: Gun_Geo
+    13700008: Head_Geo
+    13700010: Pivot_Geo
+    13700012: Remote_Left_Geo
+    13700014: Remote_Left_Geo1
+    13700016: Restrainer_Left_Geo
+    13700018: Restrainer_Right_Geo
+    13700020: Rotator_Geo
+    13700022: Scope_Geo
+    13700024: Strap_Geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control01
+        weight: 1
+      - path: Global_Control01/BN_Root01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Body01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Body01/BN_Head01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Body01/BN_Head01/BN_HeadMid01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Body01/BN_Head01/BN_HeadMid01/BE_HeadEnd01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Scope01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Scope01/BN_Gun01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Pivot01/BN_Scope01/BN_Gun01/BE_GunTip01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01/Body_Control01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01/Body_Control01/Head_Control01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01/Body_Control01/Head_Control01/HeadMid_Control01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01/Scope_Control01
+        weight: 1
+      - path: Global_Control01/Pivot_Control01/Scope_Control01/Gun_Control01
+        weight: 1
+      - path: Player_Geo
+        weight: 1
+      - path: Player_Geo/Base_Geo
+        weight: 1
+      - path: Player_Geo/Body_Geo
+        weight: 1
+      - path: Player_Geo/Glasses_Geo
+        weight: 1
+      - path: Player_Geo/Gun_Geo
+        weight: 1
+      - path: Player_Geo/Head_Geo
+        weight: 1
+      - path: Player_Geo/Pivot_Geo
+        weight: 1
+      - path: Player_Geo/Remote_Left_Geo
+        weight: 1
+      - path: Player_Geo/Remote_Left_Geo1
+        weight: 1
+      - path: Player_Geo/Restrainer_Left_Geo
+        weight: 1
+      - path: Player_Geo/Restrainer_Right_Geo
+        weight: 1
+      - path: Player_Geo/Rotator_Geo
+        weight: 1
+      - path: Player_Geo/Scope_Geo
+        weight: 1
+      - path: Player_Geo/Strap_Geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
