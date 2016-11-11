@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: f1717a5c77df5469e97cb899eaf9f555
+timeCreated: 1478797654
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_Left_Control01
+    100002: Arm_Right_Control01
+    100004: BasicEnnemie_Geo
+    100006: BE_ArmEnd_Left01
+    100008: BE_ArmEnd_Right01
+    100010: BE_HeadEnd01
+    100012: BE_Hip01
+    100014: BN_Arm_Left01
+    100016: BN_Arm_Right01
+    100018: BN_Bottom01
+    100020: BN_Elbow_Left01
+    100022: BN_Elbow_Right01
+    100024: BN_Head01
+    100026: BN_HeadEnd01
+    100028: BN_HeadMid01
+    100030: BN_Hip01
+    100032: BN_Leg_Left01
+    100034: BN_Leg_Left01 1
+    100036: BN_Leg_Right01
+    100038: BN_Leg_Right01 1
+    100040: BN_Root01
+    100042: Body_Geo
+    100044: Bottom_Control01
+    100046: Bottom_Geo
+    100048: //RootNode
+    100050: Elbow_Left_Control01
+    100052: Elbw_Right_Control01
+    100054: Eye_Left_Geo
+    100056: Eye_Right_Geo
+    100058: Global_Control01
+    100060: Head_Control01
+    100062: HeadMid_Control01
+    100064: Leg_Left_Control01
+    100066: Leg_Right_Control01
+    100068: Leg_Right_Geo
+    100070: Leg_Right_Geo1
+    400000: Arm_Left_Control01
+    400002: Arm_Right_Control01
+    400004: BasicEnnemie_Geo
+    400006: BE_ArmEnd_Left01
+    400008: BE_ArmEnd_Right01
+    400010: BE_HeadEnd01
+    400012: BE_Hip01
+    400014: BN_Arm_Left01
+    400016: BN_Arm_Right01
+    400018: BN_Bottom01
+    400020: BN_Elbow_Left01
+    400022: BN_Elbow_Right01
+    400024: BN_Head01
+    400026: BN_HeadEnd01
+    400028: BN_HeadMid01
+    400030: BN_Hip01
+    400032: BN_Leg_Left01
+    400034: BN_Leg_Left01 1
+    400036: BN_Leg_Right01
+    400038: BN_Leg_Right01 1
+    400040: BN_Root01
+    400042: Body_Geo
+    400044: Bottom_Control01
+    400046: Bottom_Geo
+    400048: //RootNode
+    400050: Elbow_Left_Control01
+    400052: Elbw_Right_Control01
+    400054: Eye_Left_Geo
+    400056: Eye_Right_Geo
+    400058: Global_Control01
+    400060: Head_Control01
+    400062: HeadMid_Control01
+    400064: Leg_Left_Control01
+    400066: Leg_Right_Control01
+    400068: Leg_Right_Geo
+    400070: Leg_Right_Geo1
+    4300000: Body_Geo
+    4300002: Eye_Right_Geo
+    4300004: Eye_Left_Geo
+    4300006: Bottom_Geo
+    4300008: Leg_Right_Geo
+    4300010: Leg_Right_Geo1
+    7400000: Run
+    9500000: //RootNode
+    13700000: Body_Geo
+    13700002: Bottom_Geo
+    13700004: Eye_Left_Geo
+    13700006: Eye_Right_Geo
+    13700008: Leg_Right_Geo
+    13700010: Leg_Right_Geo1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BasicEnnemie_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Body_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Bottom_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Eye_Left_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Eye_Right_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Leg_Right_Geo
+        weight: 1
+      - path: BasicEnnemie_Geo/Leg_Right_Geo1
+        weight: 1
+      - path: Global_Control01
+        weight: 1
+      - path: Global_Control01/BN_Root01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01/BN_Elbow_Left01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01/BN_Elbow_Left01/BE_ArmEnd_Left01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01/BN_Elbow_Right01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01/BN_Elbow_Right01/BE_ArmEnd_Right01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01/BN_HeadEnd01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01/BN_HeadEnd01/BE_HeadEnd01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01/BE_Hip01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01/BN_Leg_Left01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01/BN_Leg_Left01/BN_Leg_Left01 1
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01/BN_Leg_Right01
+        weight: 1
+      - path: Global_Control01/BN_Root01/BN_Hip01/BN_Leg_Right01/BN_Leg_Right01 1
+        weight: 1
+      - path: Global_Control01/Bottom_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Left_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Left_Control01/Elbow_Left_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Right_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Right_Control01/Elbw_Right_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Head_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Head_Control01/HeadMid_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Left_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Right_Control01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

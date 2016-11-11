@@ -64,8 +64,9 @@ public class Player : MonoBehaviour {
 			nextShotTime = Time.time + msBetweenShoots / 1000f;
 			animator.Play ("Attack");
 			yield return new WaitForSeconds (.2f);
-			Instantiate (bullets [index], ShootPoints.GetActiveSpawnPoint (shootPosition).position, ShootPoints.GetActiveSpawnPoint (shootPosition).rotation);
-			Instantiate (shotEffects [index], ShootPoints.GetActiveSpawnPoint (shootPosition).position, ShootPoints.GetActiveSpawnPoint (shootPosition).rotation);
+			Instantiate (bullets [index], ShootPoints.GetActiveShootPoint (shootPosition).position, ShootPoints.GetActiveShootPoint (shootPosition).rotation);
+			GameObject i = Instantiate (shotEffects [index], ShootPoints.GetActiveShootPoint (shootPosition).position, ShootPoints.GetActiveShootPoint (shootPosition).rotation) as GameObject;
+			Destroy (i.gameObject, 3f);
 		}
 	}
 

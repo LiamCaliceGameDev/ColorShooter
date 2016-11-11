@@ -4,30 +4,30 @@ using System.Collections;
 public class ShootPoints : MonoBehaviour {
 
 
-	private static Transform[] spawnPoints;
-	private static Transform activeSpawnPoint;
+	private static Transform[] shootPoints;
+	private static Transform activeShootPoint;
 
 	void Awake () {
-		spawnPoints = new Transform [transform.childCount];
-		for (int i = 0; i < spawnPoints.Length; i++) {
-			spawnPoints [i] = transform.GetChild (i);
+		shootPoints = new Transform [transform.childCount];
+		for (int i = 0; i < shootPoints.Length; i++) {
+			shootPoints [i] = transform.GetChild (i);
 		}
 	}
 
 
-	public static Transform GetActiveSpawnPoint (Transform playerTransform) {
+	public static Transform GetActiveShootPoint (Transform playerTransform) {
 		float nearestDistance = Mathf.Infinity;
 
-		foreach (Transform spawnPoint in spawnPoints) {
+		foreach (Transform spawnPoint in shootPoints) {
 			float distance = Vector3.Distance (spawnPoint.position, playerTransform.position);
 			if (distance < nearestDistance) {
 				nearestDistance = distance;
-				activeSpawnPoint = spawnPoint;
+				activeShootPoint = spawnPoint;
 			}
 		}
 
-		if (activeSpawnPoint != null) {
-			return activeSpawnPoint;
+		if (activeShootPoint != null) {
+			return activeShootPoint;
 		} else {
 			return null;
 		}
