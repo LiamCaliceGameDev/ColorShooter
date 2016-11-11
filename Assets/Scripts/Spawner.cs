@@ -8,13 +8,15 @@ public class Spawner : MonoBehaviour {
 
 	private float nextSpawnTime;
 
+	private PlayerStats playerStats;
 
 	void Start () {
+		playerStats = PlayerStats.instance;
 		nextSpawnTime = timeBetweenSpawnsMinMax.y;
 	}
 
 	void Update () {
-		if (PlayerStats.isDead) {
+		if (playerStats.isDead) {
 			return;
 		}
 		if (Time.time > nextSpawnTime) {

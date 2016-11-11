@@ -3,39 +3,46 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
 
-	[Header("Life")]
-	public int startLife = 5;
-	public static int Life;
+	public static PlayerStats instance;
 
-
-	[Header("Player Reference")]
-	public GameObject startplayer;
-	private static GameObject Player;
-
-
-	public static float TimeSurvived;
-	public static bool isDead = false;
-
-	void Start () {
-		Player = startplayer;
-		Life = startLife;
-		HealthUI.SetHealthUI ();
-	}
-
-	public static void TakeDamage (int amount) {
-		if (isDead) {
+	void Awake () {
+		if (instance != null) {
+			Debug.LogError ("More Than One BuildManager In Scene!");
 			return;
 		}
-		Life -= amount;
-		HealthUI.SetHealthUI ();
-		if (Life <= 0 && !isDead) {
+		instance = this;
+	}
+		
+	public int Life = 5;
+	public GameObject Player;
+	public float TimeSurvived;
+	public bool isDead = false;
+
+	private HealthUI healthUI;
+
+
+	void Start () {
+		healthUI = HealthUI.instance;
+		healthUI.SetHealthUI ();
+	}
+
+	public void TakeDamage (int amount) {
+		if (instance.isDead) {
+			return;
+		}
+		instance.Life -= amount;
+		healthUI.SetHealthUI ();
+		if (instance.Life <= 0 && !instance.isDead) {
 			Die ();
 		}
 	}
 
-	private static void Die () {
-		isDead = true;
-		Destroy (Player);
+	private void Die () {
+		instance.isDead = true;
+		Destroy (instance.Player);
+		if (instance.TimeSurvived > PlayerPrefs.GetFloat ("highscore")) {
+			PlayerPrefs.SetFloat ("highscore", instance.TimeSurvived);
+		}
 	}
 		
 	void Update () {

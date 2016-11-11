@@ -15,13 +15,16 @@ public class Enemy : MonoBehaviour {
 	[Header("Setup Fields")]
 	public Transform playerTransform;
 
+	private PlayerStats playerStats;
+
 
 	void Start () {
+		playerStats = PlayerStats.instance;
 		transform.LookAt (playerTransform.position);	
 	}
 		
 	void Update () {
-		if (PlayerStats.isDead) {
+		if (playerStats.isDead) {
 			Die ();
 			return;
 		}
@@ -39,7 +42,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	private void OnReachPlayer () {
-		PlayerStats.TakeDamage(attackDamage);
+		playerStats.TakeDamage(attackDamage);
 		Instantiate (deathEffect, transform.position, Quaternion.identity);
 		PlayerNode.HitColorEffect ();
 		Die ();
@@ -53,7 +56,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	private void Die () {
-		if (PlayerStats.isDead) {
+		if (playerStats.isDead) {
 			GameObject i = Instantiate (deathEffect, transform.position, Quaternion.identity) as GameObject;
 			Destroy (i, 3f);
 		}

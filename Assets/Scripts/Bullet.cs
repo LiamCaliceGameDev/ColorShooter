@@ -10,6 +10,12 @@ public class Bullet : MonoBehaviour {
 	public LayerMask collisionMask;
 	public GameObject impactEffect;
 
+	private PlayerStats playerStats;
+
+	void Start () {
+		playerStats = PlayerStats.instance;
+	}
+
 	void Update () {
 		transform.Translate (Vector3.forward * Time.deltaTime * speed);
 	}
@@ -42,7 +48,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	private void OnWrongHit (Enemy hitEnemy) {
-		PlayerStats.TakeDamage (hitEnemy.errorShotDamage);
+		playerStats.TakeDamage (hitEnemy.errorShotDamage);
 		PlayerNode.HitColorEffect ();
 	}
 

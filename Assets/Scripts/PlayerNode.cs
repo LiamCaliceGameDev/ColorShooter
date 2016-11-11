@@ -7,7 +7,6 @@ public class PlayerNode : MonoBehaviour {
 
 	public static PlayerNode instance;
 
-
 	static Renderer rend;
 	static Color startColor;
 	static Color hitColor;
