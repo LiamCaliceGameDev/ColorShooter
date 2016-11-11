@@ -4,9 +4,9 @@ using System.Collections;
 public class Enemy : MonoBehaviour {
 
 	[Header("Attributes")]
-	public float speed = 2f;
 	public string color;
 	public int life = 1;
+	public float speed = 2f;
 	public int errorShotDamage = 1;
 	public int attackDamage = 1;
 	public GameObject deathEffect;
@@ -16,29 +16,33 @@ public class Enemy : MonoBehaviour {
 	public Transform playerTransform;
 
 
-
 	void Start () {
 		transform.LookAt (playerTransform.position);	
 	}
-
-
-	
+		
 	void Update () {
 		if (PlayerStats.isDead) {
 			Die ();
+			return;
 		}
+		DetectReachPlayer ();
+	}
 
+	private void DetectReachPlayer () {
 		float distanceToPlayer = Vector3.Distance (transform.position, playerTransform.position);
 
 		if (distanceToPlayer <= 2) {
-			PlayerStats.TakeDamage(attackDamage);
-			Instantiate (deathEffect, transform.position, Quaternion.identity);
-			PlayerNode.HitColorEffect ();
-			Die ();
+			OnReachPlayer ();
 		} else {
 			transform.Translate (Vector3.forward * Time.deltaTime * speed);
 		}
+	}
 
+	private void OnReachPlayer () {
+		PlayerStats.TakeDamage(attackDamage);
+		Instantiate (deathEffect, transform.position, Quaternion.identity);
+		PlayerNode.HitColorEffect ();
+		Die ();
 	}
 
 	public void TakeDamage (int amount) {
@@ -54,7 +58,5 @@ public class Enemy : MonoBehaviour {
 			Destroy (i, 3f);
 		}
 		Destroy (gameObject);
-
-
 	}
 }

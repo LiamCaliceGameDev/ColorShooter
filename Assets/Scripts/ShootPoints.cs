@@ -14,7 +14,6 @@ public class ShootPoints : MonoBehaviour {
 		}
 	}
 
-
 	public static Transform GetActiveShootPoint (Transform playerTransform) {
 		float nearestDistance = Mathf.Infinity;
 

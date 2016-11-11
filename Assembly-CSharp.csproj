@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HealthUI.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Difficulty.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -54,6 +55,7 @@
      <Compile Include="Assets\Scripts\ShootPoints.cs" />
      <Compile Include="Assets\Scripts\SpawnPoints.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\TimerUI.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

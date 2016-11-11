@@ -11,8 +11,7 @@ public class Bullet : MonoBehaviour {
 	public GameObject impactEffect;
 
 	void Update () {
-		float moveDistance = Time.deltaTime * speed;
-		transform.Translate (Vector3.forward * moveDistance);
+		transform.Translate (Vector3.forward * Time.deltaTime * speed);
 	}
 
 	void OnTriggerEnter (Collider hitObject) {
@@ -28,15 +27,23 @@ public class Bullet : MonoBehaviour {
 	private void OnHitObject(Enemy hitEnemy) {
 		GameObject i = Instantiate (impactEffect, transform.position, Quaternion.identity) as GameObject;
 		Destroy (i, 3f);
+
 		Destroy (gameObject);
 
 		if (color == hitEnemy.color) {
-			hitEnemy.TakeDamage (damage);
+			OnCorrectHit (hitEnemy);
 		} else {
-			PlayerStats.TakeDamage (hitEnemy.errorShotDamage);
-			PlayerNode.HitColorEffect ();
+			OnWrongHit(hitEnemy);
 		}
+	}
 
+	private void OnCorrectHit (Enemy hitEnemy) {
+		hitEnemy.TakeDamage (damage);
+	}
+
+	private void OnWrongHit (Enemy hitEnemy) {
+		PlayerStats.TakeDamage (hitEnemy.errorShotDamage);
+		PlayerNode.HitColorEffect ();
 	}
 
 }

@@ -19,9 +19,7 @@ public class Player : MonoBehaviour {
 
 
 	private Vector3 targetRotation;
-
 	private float nextShotTime;
-
 	private Animator animator;
 
 	void Awake () {
