@@ -90,6 +90,7 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 'Assets/Scripts/Bullet.cs'
+'Assets/Scripts/Difficulty.cs'
 'Assets/Scripts/Enemy.cs'
 'Assets/Scripts/Player.cs'
 'Assets/Scripts/PlayerNode.cs'

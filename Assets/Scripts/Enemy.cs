@@ -20,8 +20,14 @@ public class Enemy : MonoBehaviour {
 	void Start () {
 		transform.LookAt (playerTransform.position);	
 	}
+
+
 	
 	void Update () {
+		if (PlayerStats.isDead) {
+			Die ();
+		}
+
 		float distanceToPlayer = Vector3.Distance (transform.position, playerTransform.position);
 
 		if (distanceToPlayer <= 2) {
@@ -43,6 +49,12 @@ public class Enemy : MonoBehaviour {
 	}
 
 	private void Die () {
+		if (PlayerStats.isDead) {
+			GameObject i = Instantiate (deathEffect, transform.position, Quaternion.identity) as GameObject;
+			Destroy (i, 3f);
+		}
 		Destroy (gameObject);
+
+
 	}
 }
