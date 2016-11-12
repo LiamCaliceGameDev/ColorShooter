@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: ec56c8ff69a944482b8ad3e4a848772d
+timeCreated: 1478946267
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_Left_Control01
+    100002: Arm_Right_Control01
+    100004: BE_ArmEnd_Left01
+    100006: BE_ArmEnd_Right01
+    100008: BE_HeadEnd01
+    100010: BE_Hip01
+    100012: BE_Leg_Left01
+    100014: BE_Leg_Right01
+    100016: BN_Arm_Left01
+    100018: BN_Arm_Right01
+    100020: BN_Bottom01
+    100022: BN_Elbow_Left01
+    100024: BN_Elbow_Right01
+    100026: BN_Head01
+    100028: BN_HeadEnd01
+    100030: BN_HeadMid01
+    100032: BN_Hip01
+    100034: BN_Leg_Left01
+    100036: BN_Leg_Right01
+    100038: BN_Root01
+    100040: Body_Geo
+    100042: Bottom
+    100044: Bottom_Control01
+    100046: BruteEnnemie_Geo
+    100048: //RootNode
+    100050: Elbow_Left_Control01
+    100052: Elbow_Right_Control01
+    100054: Eye_Right_Geo
+    100056: Global_Control01
+    100058: HeadMid_Control01
+    100060: Horn010_Geo
+    100062: Horn010_Geo1
+    100064: Horn02_Geo
+    100066: Horn02_Geo1
+    100068: Horn03_Geo
+    100070: Horn03_Geo1
+    100072: Horn04_Geo
+    100074: Horn05_Geo
+    100076: Horn05_Geo1
+    100078: Horn05_Geo2
+    100080: Horn06_Geo
+    100082: Horn06_Geo1
+    100084: Horn07_Geo
+    100086: Horn07_Geo1
+    100088: Horn08_Geo
+    100090: Horn08_Geo1
+    100092: Horn09_Geo
+    100094: Horn09_Geo1
+    100096: Leg_Left_Control01
+    100098: Leg_Left_Geo
+    100100: Leg_Right_Control01
+    100102: Leg_Right_Geo
+    100104: Skeleton
+    400000: Arm_Left_Control01
+    400002: Arm_Right_Control01
+    400004: BE_ArmEnd_Left01
+    400006: BE_ArmEnd_Right01
+    400008: BE_HeadEnd01
+    400010: BE_Hip01
+    400012: BE_Leg_Left01
+    400014: BE_Leg_Right01
+    400016: BN_Arm_Left01
+    400018: BN_Arm_Right01
+    400020: BN_Bottom01
+    400022: BN_Elbow_Left01
+    400024: BN_Elbow_Right01
+    400026: BN_Head01
+    400028: BN_HeadEnd01
+    400030: BN_HeadMid01
+    400032: BN_Hip01
+    400034: BN_Leg_Left01
+    400036: BN_Leg_Right01
+    400038: BN_Root01
+    400040: Body_Geo
+    400042: Bottom
+    400044: Bottom_Control01
+    400046: BruteEnnemie_Geo
+    400048: //RootNode
+    400050: Elbow_Left_Control01
+    400052: Elbow_Right_Control01
+    400054: Eye_Right_Geo
+    400056: Global_Control01
+    400058: HeadMid_Control01
+    400060: Horn010_Geo
+    400062: Horn010_Geo1
+    400064: Horn02_Geo
+    400066: Horn02_Geo1
+    400068: Horn03_Geo
+    400070: Horn03_Geo1
+    400072: Horn04_Geo
+    400074: Horn05_Geo
+    400076: Horn05_Geo1
+    400078: Horn05_Geo2
+    400080: Horn06_Geo
+    400082: Horn06_Geo1
+    400084: Horn07_Geo
+    400086: Horn07_Geo1
+    400088: Horn08_Geo
+    400090: Horn08_Geo1
+    400092: Horn09_Geo
+    400094: Horn09_Geo1
+    400096: Leg_Left_Control01
+    400098: Leg_Left_Geo
+    400100: Leg_Right_Control01
+    400102: Leg_Right_Geo
+    400104: Skeleton
+    4300000: Body_Geo
+    4300002: Eye_Right_Geo
+    4300004: Horn02_Geo
+    4300006: Horn04_Geo
+    4300008: Bottom
+    4300010: Leg_Right_Geo
+    4300012: Leg_Left_Geo
+    4300014: Horn05_Geo
+    4300016: Horn07_Geo
+    4300018: Horn06_Geo
+    4300020: Horn08_Geo
+    4300022: Horn09_Geo
+    4300024: Horn03_Geo
+    4300026: Horn010_Geo
+    4300028: Horn05_Geo1
+    4300030: Horn05_Geo2
+    4300032: Horn07_Geo1
+    4300034: Horn06_Geo1
+    4300036: Horn08_Geo1
+    4300038: Horn09_Geo1
+    4300040: Horn03_Geo1
+    4300042: Horn010_Geo1
+    4300044: Horn02_Geo1
+    7400000: Run
+    9500000: //RootNode
+    13700000: Body_Geo
+    13700002: Bottom
+    13700004: Eye_Right_Geo
+    13700006: Horn010_Geo
+    13700008: Horn010_Geo1
+    13700010: Horn02_Geo
+    13700012: Horn02_Geo1
+    13700014: Horn03_Geo
+    13700016: Horn03_Geo1
+    13700018: Horn04_Geo
+    13700020: Horn05_Geo
+    13700022: Horn05_Geo1
+    13700024: Horn05_Geo2
+    13700026: Horn06_Geo
+    13700028: Horn06_Geo1
+    13700030: Horn07_Geo
+    13700032: Horn07_Geo1
+    13700034: Horn08_Geo
+    13700036: Horn08_Geo1
+    13700038: Horn09_Geo
+    13700040: Horn09_Geo1
+    13700042: Leg_Left_Geo
+    13700044: Leg_Right_Geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BruteEnnemie_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Body_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Bottom
+        weight: 1
+      - path: BruteEnnemie_Geo/Eye_Right_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn02_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn02_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn03_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn03_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn04_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn05_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn05_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn05_Geo2
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn06_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn06_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn07_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn07_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn08_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn08_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn09_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn09_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn010_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Horn010_Geo1
+        weight: 1
+      - path: BruteEnnemie_Geo/Leg_Left_Geo
+        weight: 1
+      - path: BruteEnnemie_Geo/Leg_Right_Geo
+        weight: 1
+      - path: Global_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Left_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Left_Control01/Elbow_Left_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Right_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/Arm_Right_Control01/Elbow_Right_Control01
+        weight: 1
+      - path: Global_Control01/Bottom_Control01/HeadMid_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Left_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Right_Control01
+        weight: 1
+      - path: Global_Control01/Skeleton
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01/BN_Elbow_Left01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Left01/BN_Elbow_Left01/BE_ArmEnd_Left01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01/BN_Elbow_Right01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_Arm_Right01/BN_Elbow_Right01/BE_ArmEnd_Right01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01/BN_HeadEnd01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Head01/BN_HeadMid01/BN_HeadEnd01/BE_HeadEnd01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BE_Hip01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Leg_Left01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Leg_Left01/BE_Leg_Left01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Leg_Right01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Leg_Right01/BE_Leg_Right01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

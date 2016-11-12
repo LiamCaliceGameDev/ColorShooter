@@ -25,6 +25,13 @@ public class Bullet : MonoBehaviour {
 			Destroy (gameObject);
 			return;
 		}
+
+		if (hitObject.tag == "Flyer") {
+			Enemy hitEnemyParent = hitObject.GetComponentInParent <Enemy>();
+			OnHitObject (hitEnemyParent);
+			return;
+		}
+
 		Enemy hitEnemy = hitObject.GetComponent <Enemy>();
 		OnHitObject (hitEnemy);
 	}

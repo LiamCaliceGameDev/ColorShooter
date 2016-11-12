@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: d5e2ba95400f14b128f9af32c9d22083
+timeCreated: 1478951132
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_Left_Control01
+    100002: Arm_Right_Control01
+    100004: BasicEnnemie_Geo
+    100006: BE_ArmEnd_Left01
+    100008: BE_ArmEnd_Right01
+    100010: BE_HeadEnd01
+    100012: BE_Hip01
+    100014: BN_Arm_Left01
+    100016: BN_Arm_Right01
+    100018: BN_Bottom01
+    100020: BN_Elbow_Left01
+    100022: BN_Elbow_Right01
+    100024: BN_Head01
+    100026: BN_HeadEnd01
+    100028: BN_HeadMid01
+    100030: BN_Hip01
+    100032: BN_Leg_Left01
+    100034: BN_Leg_Left01 1
+    100036: BN_Leg_Right01
+    100038: BN_Leg_Right01 1
+    100040: BN_Root01
+    100042: Body_Geo
+    100044: Bottom_Control01
+    100046: Bottom_Geo
+    100048: Elbow_Left_Control01
+    100050: Elbw_Right_Control01
+    100052: Eye_Left_Geo
+    100054: Eye_Right_Geo
+    100056: //RootNode
+    100058: Global_Control01
+    100060: Head_Control01
+    100062: HeadMid_Control01
+    100064: Horn01
+    100066: Horn02
+    100068: Horn03
+    100070: Horn04
+    100072: Horn05
+    100074: Leg_Left_Control01
+    100076: Leg_Right_Control01
+    100078: Leg_Right_Geo
+    100080: Leg_Right_Geo1
+    100082: Model01:Motor_Left_Geo
+    100084: Model01:Motor_Link_Geo
+    100086: Model01:Motor_Right_Geo
+    400000: Arm_Left_Control01
+    400002: Arm_Right_Control01
+    400004: BasicEnnemie_Geo
+    400006: BE_ArmEnd_Left01
+    400008: BE_ArmEnd_Right01
+    400010: BE_HeadEnd01
+    400012: BE_Hip01
+    400014: BN_Arm_Left01
+    400016: BN_Arm_Right01
+    400018: BN_Bottom01
+    400020: BN_Elbow_Left01
+    400022: BN_Elbow_Right01
+    400024: BN_Head01
+    400026: BN_HeadEnd01
+    400028: BN_HeadMid01
+    400030: BN_Hip01
+    400032: BN_Leg_Left01
+    400034: BN_Leg_Left01 1
+    400036: BN_Leg_Right01
+    400038: BN_Leg_Right01 1
+    400040: BN_Root01
+    400042: Body_Geo
+    400044: Bottom_Control01
+    400046: Bottom_Geo
+    400048: Elbow_Left_Control01
+    400050: Elbw_Right_Control01
+    400052: Eye_Left_Geo
+    400054: Eye_Right_Geo
+    400056: //RootNode
+    400058: Global_Control01
+    400060: Head_Control01
+    400062: HeadMid_Control01
+    400064: Horn01
+    400066: Horn02
+    400068: Horn03
+    400070: Horn04
+    400072: Horn05
+    400074: Leg_Left_Control01
+    400076: Leg_Right_Control01
+    400078: Leg_Right_Geo
+    400080: Leg_Right_Geo1
+    400082: Model01:Motor_Left_Geo
+    400084: Model01:Motor_Link_Geo
+    400086: Model01:Motor_Right_Geo
+    4300000: Body_Geo
+    4300002: Eye_Right_Geo
+    4300004: Eye_Left_Geo
+    4300006: Bottom_Geo
+    4300008: Leg_Right_Geo
+    4300010: Leg_Right_Geo1
+    4300012: Model01:Motor_Right_Geo
+    4300014: Model01:Motor_Link_Geo
+    4300016: Model01:Motor_Left_Geo
+    4300018: Horn01
+    4300020: Horn04
+    4300022: Horn03
+    4300024: Horn02
+    4300026: Horn05
+    9500000: //RootNode
+    13700000: Body_Geo
+    13700002: Bottom_Geo
+    13700004: Eye_Left_Geo
+    13700006: Eye_Right_Geo
+    13700008: Horn01
+    13700010: Horn02
+    13700012: Horn03
+    13700014: Horn04
+    13700016: Horn05
+    13700018: Leg_Right_Geo
+    13700020: Leg_Right_Geo1
+    13700022: Model01:Motor_Left_Geo
+    13700024: Model01:Motor_Link_Geo
+    13700026: Model01:Motor_Right_Geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

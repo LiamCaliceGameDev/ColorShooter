@@ -30,17 +30,27 @@ public class HealthUI : MonoBehaviour {
 
 		slider.value = playerLife;
 
-		if (playerLife == 5) {
+		if (playerLife == 10) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, 1f);
-		} else if (playerLife == 4) {
+		} else if (playerLife == 9) {
+			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .9f);
+		} else if (playerLife == 8) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .8f);
-		} else if (playerLife == 3) {
+		} else if (playerLife == 7) {
+			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .7f);
+		} else if (playerLife == 6) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .6f);
-		} else if (playerLife == 2) {
+		}  else if (playerLife == 5) {
+			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .5f);
+		} else if (playerLife == 4) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .4f);
-		} else if (playerLife == 1) {
+		} else if (playerLife == 3) {
+			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .3f);
+		} else if (playerLife == 2) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .2f);
-		}  else if (playerLife <= 0) {
+		} else if (playerLife == 1) {
+			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, .1f);
+		} else if (playerLife <= 0) {
 			fillImage.color = Color.Lerp (zeroHealthColor, fullHealthColor, 0f);
 		}
 	}
