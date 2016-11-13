@@ -3,7 +3,7 @@ using System.Collections;
 
 public static class Difficulty {
 
-	static float secondsToMaxDifficulty = 150;
+	static float secondsToMaxDifficulty = 200;
 
 	public static float GetDifficultyPercent() {
 		return Mathf.Clamp01 (Time.time / secondsToMaxDifficulty);

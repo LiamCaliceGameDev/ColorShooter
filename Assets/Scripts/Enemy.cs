@@ -11,6 +11,9 @@ public class Enemy : MonoBehaviour {
 	public int attackDamage = 1;
 	public GameObject deathEffect;
 
+	[Header("Optional")]
+	public GameObject poisonEffect;
+
 
 	[Header("Setup Fields")]
 	public Transform playerTransform;

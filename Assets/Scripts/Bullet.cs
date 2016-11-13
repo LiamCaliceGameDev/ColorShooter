@@ -55,6 +55,10 @@ public class Bullet : MonoBehaviour {
 	}
 
 	private void OnWrongHit (Enemy hitEnemy) {
+		if (hitEnemy.poisonEffect != null) {
+			GameObject i = Instantiate (hitEnemy.poisonEffect, transform.position, Quaternion.identity) as GameObject;
+			Destroy (i.gameObject, 3f);
+		}
 		playerStats.TakeDamage (hitEnemy.errorShotDamage);
 		PlayerNode.HitColorEffect ();
 	}
