@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void Update () {
-		if (playerStats.isDead) {
+		if (playerStats.isDead || Shop.isFrozen) {
 			return;
 		}
 		if (Time.time > nextSpawnTime) {

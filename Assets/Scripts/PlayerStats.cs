@@ -14,9 +14,11 @@ public class PlayerStats : MonoBehaviour {
 	}
 		
 	public int Life = 5;
+	public int MaxLife = 10;
 	public GameObject Player;
 	public float TimeSurvived;
 	public bool isDead = false;
+	public int money = 10;
 
 	private HealthUI healthUI;
 

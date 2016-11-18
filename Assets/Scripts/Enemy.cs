@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour {
 	public int errorShotDamage = 1;
 	public int attackDamage = 1;
 	public GameObject deathEffect;
+	public Vector2 deathMoneyMiMax;
 
 	[Header("Optional")]
 	public GameObject poisonEffect;
@@ -31,6 +32,11 @@ public class Enemy : MonoBehaviour {
 			Die ();
 			return;
 		}
+
+		if (Shop.isFrozen) {
+			return;
+		}
+				
 		DetectReachPlayer ();
 	}
 
@@ -54,6 +60,7 @@ public class Enemy : MonoBehaviour {
 	public void TakeDamage (int amount) {
 		life -= amount;
 		if (life <= 0f) {
+			playerStats.money += Mathf.RoundToInt (Random.Range (deathMoneyMiMax.x, deathMoneyMiMax.y));
 			Die (); 
 		}
 	}
@@ -65,4 +72,11 @@ public class Enemy : MonoBehaviour {
 		}
 		Destroy (gameObject);
 	}
+
+
+
+
+
+
+
 }
