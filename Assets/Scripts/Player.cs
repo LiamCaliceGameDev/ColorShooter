@@ -21,6 +21,11 @@ public class Player : MonoBehaviour {
 	private Vector3 targetRotation;
 	private float nextShotTime;
 	private Animator animator;
+	private PlayerStats playerStats;
+
+	void Start () {
+		playerStats = PlayerStats.instance;
+	}
 
 	void Awake () {
 		animator = GetComponent <Animator> ();
@@ -54,11 +59,19 @@ public class Player : MonoBehaviour {
 			StartCoroutine (Shoot (2));
 		} else if (Input.GetKey (KeyCode.R)) {
 			StartCoroutine (Shoot (3));
-		}
+		} else if (Input.GetKey (KeyCode.Space)) {
+			if (playerStats.specialBullets <= 0) {
+				return;
+			}
+			StartCoroutine (Shoot (4));
+		} 
 	}
 
 	IEnumerator Shoot (int index) {
 		if (Time.time > nextShotTime) {
+			if (index == 4) {
+				playerStats.specialBullets -= 1;
+			}
 			nextShotTime = Time.time + msBetweenShoots / 1000f;
 			animator.Play ("Attack");
 			yield return new WaitForSeconds (.2f);

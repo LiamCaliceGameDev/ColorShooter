@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour {
 
 		Destroy (gameObject);
 
-		if (color == hitEnemy.color) {
+		if (color == hitEnemy.color || color == "specialBullet") {
 			OnCorrectHit (hitEnemy);
 		} else {
 			OnWrongHit(hitEnemy);

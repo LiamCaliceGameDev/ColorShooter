@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour {
 	public float TimeSurvived;
 	public bool isDead = false;
 	public int money = 10;
+	public int specialBullets = 10;
 
 	private HealthUI healthUI;
 

@@ -5,8 +5,11 @@ public class GameUI : MonoBehaviour {
 	public Text highscoreText;
 	public Text timerText;
 	public Text moneyText;
+	public Text specialBulletsText;
 
 	public Color timerRecordColor;
+	public Color zeroOfSomethingColor;
+
 
 	private PlayerStats playerStats;
 
@@ -22,6 +25,39 @@ public class GameUI : MonoBehaviour {
 		if (playerStats.TimeSurvived > PlayerPrefs.GetFloat ("highscore")) {
 			timerText.color = timerRecordColor;
 		}
+
+		specialBulletsText.text = playerStats.specialBullets.ToString ();
+
+		if (playerStats.money <= 0) {
+			moneyText.color = zeroOfSomethingColor;
+		}
+
+		if (playerStats.specialBullets <= 0) {
+			specialBulletsText.color = zeroOfSomethingColor;
+		}
+
+		if (playerStats.money > 0) {
+			moneyText.color = Color.white;
+		}
+
+		if (playerStats.specialBullets > 0) {
+			specialBulletsText.color = Color.white;
+		}
+
 	}
+
+
+	public void PauseButton () {
+		if (playerStats.isDead) {
+			return;
+		}
+		Time.timeScale = 0f;
+	}
+
+	public void ContinueButton () {
+		Time.timeScale = 1;
+	}
+
+
 
 }

@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour {
 			Die (); 
 		}
 	}
-
+ 
 	private void Die () {
 		if (playerStats.isDead) {
 			GameObject i = Instantiate (deathEffect, transform.position, Quaternion.identity) as GameObject;
