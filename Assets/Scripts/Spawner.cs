@@ -3,7 +3,17 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 
-	public Vector2 timeBetweenSpawnsMinMax;
+	[Header("Easy")]
+	public Vector2 timeBetweenSpawnsMinMaxEasy;
+
+	[Header("Medium")]
+	public Vector2 timeBetweenSpawnsMinMaxMedium;
+
+	[Header("Hard")]
+	public Vector2 timeBetweenSpawnsMinMaxHard;
+
+	private Vector2 timeBetweenSpawnsMinMax;
+
 	public GameObject[] enemies;
 
 	private float nextSpawnTime;
@@ -11,6 +21,16 @@ public class Spawner : MonoBehaviour {
 	private PlayerStats playerStats;
 
 	void Start () {
+		if (PlayerPrefs.GetInt ("difficulty") == 1) {
+			timeBetweenSpawnsMinMax = timeBetweenSpawnsMinMaxEasy;
+		} else if (PlayerPrefs.GetInt ("difficulty") == 2) {
+			timeBetweenSpawnsMinMax = timeBetweenSpawnsMinMaxMedium;
+		} else if (PlayerPrefs.GetInt ("difficulty") == 3) {
+			timeBetweenSpawnsMinMax = timeBetweenSpawnsMinMaxHard;
+		} else {
+			timeBetweenSpawnsMinMax = timeBetweenSpawnsMinMaxMedium;
+		}
+
 		playerStats = PlayerStats.instance;
 		nextSpawnTime = timeBetweenSpawnsMinMax.y;
 	}

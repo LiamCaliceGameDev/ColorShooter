@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: bcf3d94b28ac64a598d8fa5e384c1d46
+timeCreated: 1479660561
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_Left_Control01
+    100002: Arm_Right_Control01
+    100004: Band_Left_Geo
+    100006: Band_Right_Geo
+    100008: BE_Hip01
+    100010: BE_Left_Arm01
+    100012: BE_Left_Arm02
+    100014: BE_Left_Leg01
+    100016: BE_Left_Leg02
+    100018: BN_Body01
+    100020: BN_BodyMid
+    100022: BN_Bottom01
+    100024: BN_Hip01
+    100026: BN_Left_Arm01
+    100028: BN_Left_Arm02
+    100030: BN_Left_Leg01
+    100032: BN_Left_Leg02
+    100034: BN_Root01
+    100036: Body_Control01
+    100038: Body_Geo
+    100040: Bottom_Geo
+    100042: Character_Geo
+    100044: Eye_Left_Geo
+    100046: Eye_Right_Geo
+    100048: Global_Control01
+    100050: Horn_Left_Geo
+    100052: Horn_Left_Geo1
+    100054: joint12
+    100056: Leg_Left_Control01
+    100058: Leg_Left_Geo
+    100060: Leg_Right_Control01
+    100062: Leg_Right_Geo
+    100064: nurbsCircle1
+    100066: //RootNode
+    100068: Skeleton
+    400000: Arm_Left_Control01
+    400002: Arm_Right_Control01
+    400004: Band_Left_Geo
+    400006: Band_Right_Geo
+    400008: BE_Hip01
+    400010: BE_Left_Arm01
+    400012: BE_Left_Arm02
+    400014: BE_Left_Leg01
+    400016: BE_Left_Leg02
+    400018: BN_Body01
+    400020: BN_BodyMid
+    400022: BN_Bottom01
+    400024: BN_Hip01
+    400026: BN_Left_Arm01
+    400028: BN_Left_Arm02
+    400030: BN_Left_Leg01
+    400032: BN_Left_Leg02
+    400034: BN_Root01
+    400036: Body_Control01
+    400038: Body_Geo
+    400040: Bottom_Geo
+    400042: Character_Geo
+    400044: Eye_Left_Geo
+    400046: Eye_Right_Geo
+    400048: Global_Control01
+    400050: Horn_Left_Geo
+    400052: Horn_Left_Geo1
+    400054: joint12
+    400056: Leg_Left_Control01
+    400058: Leg_Left_Geo
+    400060: Leg_Right_Control01
+    400062: Leg_Right_Geo
+    400064: nurbsCircle1
+    400066: //RootNode
+    400068: Skeleton
+    4300000: Body_Geo
+    4300002: Horn_Left_Geo
+    4300004: Eye_Right_Geo
+    4300006: Eye_Left_Geo
+    4300008: Band_Left_Geo
+    4300010: Band_Right_Geo
+    4300012: Bottom_Geo
+    4300014: Leg_Right_Geo
+    4300016: Leg_Left_Geo
+    4300018: Horn_Left_Geo1
+    7400000: Idle
+    9500000: //RootNode
+    13700000: Band_Left_Geo
+    13700002: Band_Right_Geo
+    13700004: Body_Geo
+    13700006: Bottom_Geo
+    13700008: Eye_Left_Geo
+    13700010: Eye_Right_Geo
+    13700012: Horn_Left_Geo
+    13700014: Horn_Left_Geo1
+    13700016: Leg_Left_Geo
+    13700018: Leg_Right_Geo
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Character_Geo
+        weight: 1
+      - path: Character_Geo/Band_Left_Geo
+        weight: 1
+      - path: Character_Geo/Band_Right_Geo
+        weight: 1
+      - path: Character_Geo/Body_Geo
+        weight: 1
+      - path: Character_Geo/Bottom_Geo
+        weight: 1
+      - path: Character_Geo/Eye_Left_Geo
+        weight: 1
+      - path: Character_Geo/Eye_Right_Geo
+        weight: 1
+      - path: Character_Geo/Horn_Left_Geo
+        weight: 1
+      - path: Character_Geo/Horn_Left_Geo1
+        weight: 1
+      - path: Character_Geo/Leg_Left_Geo
+        weight: 1
+      - path: Character_Geo/Leg_Right_Geo
+        weight: 1
+      - path: Global_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Left_Control01
+        weight: 1
+      - path: Global_Control01/Leg_Right_Control01
+        weight: 1
+      - path: Global_Control01/nurbsCircle1
+        weight: 1
+      - path: Global_Control01/nurbsCircle1/Body_Control01
+        weight: 1
+      - path: Global_Control01/nurbsCircle1/Body_Control01/Arm_Left_Control01
+        weight: 1
+      - path: Global_Control01/nurbsCircle1/Body_Control01/Arm_Right_Control01
+        weight: 1
+      - path: Global_Control01/Skeleton
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_BodyMid
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_BodyMid/joint12
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_Left_Arm01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_Left_Arm01/BE_Left_Arm01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_Left_Arm02
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Bottom01/BN_Body01/BN_Left_Arm02/BE_Left_Arm02
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BE_Hip01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Left_Leg01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Left_Leg01/BE_Left_Leg01
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Left_Leg02
+        weight: 1
+      - path: Global_Control01/Skeleton/BN_Root01/BN_Hip01/BN_Left_Leg02/BE_Left_Leg02
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 8
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

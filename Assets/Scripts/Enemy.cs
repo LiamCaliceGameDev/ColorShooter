@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour {
 
 	[Header("Optional")]
 	public GameObject poisonEffect;
+	public bool isSabator = false;
+	public int specialBulletDeduction = 5;
 
 
 	[Header("Setup Fields")]
@@ -55,6 +57,9 @@ public class Enemy : MonoBehaviour {
 		Instantiate (deathEffect, transform.position, Quaternion.identity);
 		PlayerNode.HitColorEffect ();
 		Die ();
+		if (isSabator) {
+			playerStats.specialBullets -= specialBulletDeduction;
+		}
 	}
 
 	public void TakeDamage (int amount) {

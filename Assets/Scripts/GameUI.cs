@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+
+
 public class GameUI : MonoBehaviour {
 
 	public Text highscoreText;
 	public Text timerText;
 	public Text moneyText;
 	public Text specialBulletsText;
+	public GameObject pauseMenu;
+	public Button pauseButton;
 
 	public Color timerRecordColor;
 	public Color zeroOfSomethingColor;
-
 
 	private PlayerStats playerStats;
 
@@ -44,6 +48,12 @@ public class GameUI : MonoBehaviour {
 			specialBulletsText.color = Color.white;
 		}
 
+		if (playerStats.isDead) {
+			pauseButton.interactable = false;
+		} else {
+			pauseButton.interactable = true;
+		}
+
 	}
 
 
@@ -51,13 +61,14 @@ public class GameUI : MonoBehaviour {
 		if (playerStats.isDead) {
 			return;
 		}
+		pauseMenu.SetActive (true);
 		Time.timeScale = 0f;
 	}
 
 	public void ContinueButton () {
 		Time.timeScale = 1;
+		pauseMenu.SetActive (false);
 	}
-
 
 
 }

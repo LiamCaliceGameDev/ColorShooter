@@ -52,6 +52,11 @@ public class PlayerStats : MonoBehaviour {
 		if (!isDead) {
 			TimeSurvived += Time.deltaTime;
 		}
+
+		if (specialBullets < 0) {
+			specialBullets = 0;
+		}
+
 	}
 
 }

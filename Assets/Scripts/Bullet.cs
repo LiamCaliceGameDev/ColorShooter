@@ -43,6 +43,16 @@ public class Bullet : MonoBehaviour {
 
 		Destroy (gameObject);
 
+		if (hitEnemy.isSabator) {
+			if (color == hitEnemy.color) {
+				OnCorrectHit (hitEnemy);
+			} else {
+				OnWrongHit (hitEnemy);
+			}
+
+			return;
+		}
+
 		if (color == hitEnemy.color || color == "specialBullet") {
 			OnCorrectHit (hitEnemy);
 		} else {
@@ -55,6 +65,11 @@ public class Bullet : MonoBehaviour {
 	}
 
 	private void OnWrongHit (Enemy hitEnemy) {
+
+		if (hitEnemy.isSabator) {
+			playerStats.specialBullets -= hitEnemy.specialBulletDeduction;
+		}
+
 		if (hitEnemy.poisonEffect != null) {
 			GameObject i = Instantiate (hitEnemy.poisonEffect, transform.position, Quaternion.identity) as GameObject;
 			Destroy (i.gameObject, 3f);
