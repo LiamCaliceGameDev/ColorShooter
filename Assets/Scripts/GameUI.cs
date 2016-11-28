@@ -15,6 +15,10 @@ public class GameUI : MonoBehaviour {
 	public Color timerRecordColor;
 	public Color zeroOfSomethingColor;
 
+	public GameObject loseScreen;
+	public GameObject recordText;
+	public Text secondsSurvived;
+
 	private PlayerStats playerStats;
 
 	void Start () {
@@ -68,6 +72,17 @@ public class GameUI : MonoBehaviour {
 	public void ContinueButton () {
 		Time.timeScale = 1;
 		pauseMenu.SetActive (false);
+	}
+
+	public void LoseScreen (bool record) {
+		loseScreen.SetActive (true);
+		secondsSurvived.text = Mathf.RoundToInt (playerStats.TimeSurvived).ToString ();
+		if (record) {
+			recordText.SetActive (true);
+		} else {
+			recordText.SetActive (false);
+		}
+
 	}
 
 

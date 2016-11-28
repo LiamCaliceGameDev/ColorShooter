@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour {
 	[Header("Hard")]
 	public Vector2 timeBetweenSpawnsMinMaxHard;
 
+
 	private Vector2 timeBetweenSpawnsMinMax;
 
 	public GameObject[] enemies;

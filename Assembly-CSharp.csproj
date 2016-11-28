@@ -45,13 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Initializer.cs" />
-     <Compile Include="Assets\OptionsUI.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Difficulty.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GameUI.cs" />
      <Compile Include="Assets\Scripts\HealthUI.cs" />
+     <Compile Include="Assets\Scripts\Initializer.cs" />
+     <Compile Include="Assets\Scripts\OptionsUI.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PlayerNode.cs" />
      <Compile Include="Assets\Scripts\PlayerStats.cs" />

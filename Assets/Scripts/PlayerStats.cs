@@ -22,11 +22,13 @@ public class PlayerStats : MonoBehaviour {
 	public int specialBullets = 10;
 
 	private HealthUI healthUI;
+	private GameUI gameUI;
 
 
 	void Start () {
 		healthUI = HealthUI.instance;
 		healthUI.SetHealthUI ();
+		gameUI = GetComponent <GameUI> ();
 	}
 
 	public void TakeDamage (int amount) {
@@ -43,9 +45,14 @@ public class PlayerStats : MonoBehaviour {
 	private void Die () {
 		instance.isDead = true;
 		Destroy (instance.Player);
-		if (instance.TimeSurvived > PlayerPrefs.GetFloat ("highscore")) {
-			PlayerPrefs.SetFloat ("highscore", instance.TimeSurvived);
+	
+		if (instance.TimeSurvived <= PlayerPrefs.GetFloat ("highscore")) {
+			gameUI.LoseScreen (false);
+			return;
 		}
+		gameUI.LoseScreen (true);
+		PlayerPrefs.SetFloat ("highscore", instance.TimeSurvived);
+
 	}
 		
 	void Update () {
