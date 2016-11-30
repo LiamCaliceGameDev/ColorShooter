@@ -9,8 +9,9 @@ public class Initializer : MonoBehaviour {
 
 		if(isLoginOnce != "True") {
 			PlayerPrefs.SetString ("_isLoginOnce", "True");
-			PlayerPrefs.SetInt ("difficulty", 2);
+			PlayerPrefs.SetInt ("difficulty", 1);
 			PlayerPrefs.SetFloat ("volume", 0.5f);
 		}
 	}
+
 }

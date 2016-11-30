@@ -79,14 +79,11 @@ public class Shop : MonoBehaviour {
 		if (isFrozen || playerStats.money < freezeCost) {
 			freezeButton.interactable = false;
 			freezeText.color = freezeFadedTextColor;
-
-
 		} 
 
 		if (playerStats.money >= freezeCost && !isFrozen) {
 			freezeButton.interactable = true;
 			freezeText.color = freezeNormalTextColor;
-
 		} 
 
 		if (playerStats.money < healCost) {
@@ -122,6 +119,7 @@ public class Shop : MonoBehaviour {
 	}
 
 	IEnumerator StartFreezeEffect() {
+		SoundManager.instance.SoundFreeze ();
 		playerStats.money -= freezeCost;
 		isFrozen = true;
 		foreach (Transform node in nodes) {
@@ -149,7 +147,7 @@ public class Shop : MonoBehaviour {
 	// Heal Power Up
 
 	public void Heal () {
-
+		SoundManager.instance.HealSound ();
 		if (playerStats.money < healCost) {
 			Debug.Log ("Not Enough Money!");
 			return;
@@ -180,7 +178,7 @@ public class Shop : MonoBehaviour {
 	// Special Bullets
 
 	public void SpecialBullets () {
-
+		SoundManager.instance.BuyBulletsSound ();
 		if (playerStats.money < specialBulletsCost) {
 			Debug.Log ("Not Enough Money!");
 			return;

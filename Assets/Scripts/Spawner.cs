@@ -45,6 +45,7 @@ public class Spawner : MonoBehaviour {
 			nextSpawnTime = Time.time + timeBetweenSpawns;
 			SpawnEnemy ();
 		}
+		Debug.Log (Difficulty.GetDifficultyPercent ());
 	}
 
 	private void SpawnEnemy () {

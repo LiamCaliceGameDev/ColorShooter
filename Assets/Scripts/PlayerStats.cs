@@ -35,6 +35,7 @@ public class PlayerStats : MonoBehaviour {
 		if (instance.isDead) {
 			return;
 		}
+		SoundManager.instance.PlayerDamageSound ();
 		instance.Life -= amount;
 		healthUI.SetHealthUI ();
 		if (instance.Life <= 0 && !instance.isDead) {
@@ -43,6 +44,7 @@ public class PlayerStats : MonoBehaviour {
 	}
 
 	private void Die () {
+		SoundManager.instance.GameEndSound ();
 		instance.isDead = true;
 		Destroy (instance.Player);
 	

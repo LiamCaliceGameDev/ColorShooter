@@ -38,6 +38,7 @@ public class Bullet : MonoBehaviour {
 
 
 	private void OnHitObject(Enemy hitEnemy) {
+		SoundManager.instance.HitEnemySound ();
 		GameObject i = Instantiate (impactEffect, transform.position, Quaternion.identity) as GameObject;
 		Destroy (i, 3f);
 

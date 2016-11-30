@@ -71,6 +71,9 @@ public class Player : MonoBehaviour {
 		if (Time.time > nextShotTime) {
 			if (index == 4) {
 				playerStats.specialBullets -= 1;
+				SoundManager.instance.SpecialBulletSound ();
+			} else {
+				SoundManager.instance.ShootSound ();
 			}
 			nextShotTime = Time.time + msBetweenShoots / 1000f;
 			animator.Play ("Attack");

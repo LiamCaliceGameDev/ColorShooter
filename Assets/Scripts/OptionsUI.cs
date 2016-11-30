@@ -13,7 +13,12 @@ public class OptionsUI : MonoBehaviour {
 
 	public Image difficultyImage;
 
+	BGMusic bgMusic;
+	AudioSource bgAudioSource;
+
 	void Start () {
+		bgMusic = FindObjectOfType <BGMusic> ();
+		bgAudioSource = bgMusic.GetComponent <AudioSource> ();
 		difficultySlider.value = PlayerPrefs.GetInt ("difficulty");
 		volumeSlider.value = PlayerPrefs.GetFloat ("volume");
 	}
@@ -24,7 +29,12 @@ public class OptionsUI : MonoBehaviour {
 		PlayerPrefs.SetFloat ("volume", volumeSlider.value);
 	}
 
+	void Update () {
+		bgAudioSource.volume = Mathf.Clamp01 ( volumeSlider.value);
+	}
+
 	public void onSliderValueChanged () {
+		
 		if (difficultySlider.value == 1) {
 			difficultyImage.sprite = easyImage;
 		} else if (difficultySlider.value == 2) {
@@ -32,6 +42,7 @@ public class OptionsUI : MonoBehaviour {
 		} else if (difficultySlider.value == 3) {
 			difficultyImage.sprite = hardImage;
 		}
+
 	}
 
 }
